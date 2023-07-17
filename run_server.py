@@ -13,8 +13,8 @@ def run_django_server():
     # 3- Set up Django's settings module
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
 
+    # 4- Run the Django server
     try:
-        # 4- Run the Django server
         execute_from_command_line(['manage.py', 'runserver'])
     except Exception as e:
         print(f"Error: {e}")
